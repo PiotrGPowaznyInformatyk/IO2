@@ -7,13 +7,24 @@ public class EnemyDroneAdapter implements Enemy {
 	}
 	
 	@Override
-	public void fireWeapon() {
-		dron.scanBattlefield();
+	public String fireWeapon() {
+		 return dron.scanBattlefield();
 	}
 
 	@Override
-	public void walkForward() {
-		dron.fly();
+	public String walkForward() {
+		return dron.fly();
 	}
 
+	
+	public int getDamage() {
+		return 0;
+	}
+
+	public int getMovespeed() {
+		return dron.getMovespeed();
+	}
+	public void setMovespeed(int movespeed) {
+		dron.setMovespeed(movespeed);
+	}
 }

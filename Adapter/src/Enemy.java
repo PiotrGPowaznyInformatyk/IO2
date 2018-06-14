@@ -1,6 +1,6 @@
 
 public interface Enemy {
-	public void fireWeapon();
-	public void walkForward();
+	public String fireWeapon();
+	public String walkForward();
 	
 }

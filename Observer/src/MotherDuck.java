@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class MotherDuck implements Subject{
 	private ArrayList<Observer> observers;
+
 	private boolean walkingStatus;
 	
 	public MotherDuck() {
@@ -25,7 +26,6 @@ public class MotherDuck implements Subject{
 		  for(Observer observer : observers){
 			  observer.update(walkingStatus);
 		  }
-		
 	}
 	
 	
@@ -40,4 +40,26 @@ public class MotherDuck implements Subject{
 		notifyObserver();
 	}
 	
+	
+	
+	
+	
+	public ArrayList<Observer> getObservers() {
+		return observers;
+	}
+
+
+	public void setObservers(ArrayList<Observer> observers) {
+		this.observers = observers;
+	}
+
+
+	public boolean isWalkingStatus() {
+		return walkingStatus;
+	}
+
+
+	public void setWalkingStatus(boolean walkingStatus) {
+		this.walkingStatus = walkingStatus;
+	}
 }

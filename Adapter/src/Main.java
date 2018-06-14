@@ -6,13 +6,12 @@ public class Main {
 		Enemy AdaptedDrone = new EnemyDroneAdapter(new EnemyDrone(12));
 		
 		System.out.println("Enemy Soldier:");
-		eS.fireWeapon();
-		eS.walkForward();
+		System.out.println(eS.fireWeapon());
+		System.out.println(eS.walkForward());
 		
 		System.out.println("Enemy Drone (adapted):");
-		AdaptedDrone.fireWeapon();
-		AdaptedDrone.walkForward();
-		
+		System.out.println(AdaptedDrone.fireWeapon());
+		System.out.println(AdaptedDrone.walkForward());
 	}
 
 }

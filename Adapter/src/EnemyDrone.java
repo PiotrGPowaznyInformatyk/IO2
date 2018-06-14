@@ -7,12 +7,22 @@ public class EnemyDrone {
 		this.movespeed=movespeed;
 	}
 	
-	public void scanBattlefield() {
-		System.out.println("Enemy Drone scans the battlefield.");
+	public String scanBattlefield() {
+		return ("Enemy Drone scans the battlefield.");
 	}
 	
-	public void fly() {
-		System.out.println("Enemy Drone flies " + movespeed + " points.");
+	public String fly() {
+		return "Enemy Drone flies " + movespeed + " points.";
 
 	}
+
+	public int getMovespeed() {
+		return movespeed;
+	}
+
+	public void setMovespeed(int movespeed) {
+		this.movespeed = movespeed;
+	}
+	
+	
 }

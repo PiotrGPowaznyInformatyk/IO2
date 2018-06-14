@@ -8,13 +8,25 @@ public class EnemySoldier implements Enemy{
 		this.movespeed=movespeed;
 	}
 	@Override
-	public void fireWeapon() {
-		System.out.println("Enemy Soldier does " + damage + " points of damage.");
+	public String fireWeapon() {
+		return ("Enemy Soldier does " + damage + " points of damage.");
 	}
 
 	@Override
-	public void walkForward() {
-		System.out.println("Enemy Soldier walks " + movespeed + " points.");
+	public String walkForward() {
+		return ("Enemy Soldier walks " + movespeed + " points.");
+	}
+	public int getDamage() {
+		return damage;
+	}
+	public void setDamage(int damage) {
+		this.damage = damage;
+	}
+	public int getMovespeed() {
+		return movespeed;
+	}
+	public void setMovespeed(int movespeed) {
+		this.movespeed = movespeed;
 	}
 
 }
